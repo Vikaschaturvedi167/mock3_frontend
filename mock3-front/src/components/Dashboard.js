@@ -10,7 +10,7 @@ const DoctorDashboard = () => {
   useEffect(() => {
     const fetchAppointments = async () => {
       try {
-        const response = await axios.get('https://anxious-rugby-shirt-dove.cyclic.app/appointments');
+        const response = await axios.get('http://localhost:8000/appointments');
         setAppointments(response.data);
         setSortedAppointments(response.data);
       } catch (error) {

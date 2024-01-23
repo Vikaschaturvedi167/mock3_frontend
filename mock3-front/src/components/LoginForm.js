@@ -13,7 +13,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       
-      const response = await axios.post('https://anxious-rugby-shirt-dove.cyclic.app/appointments/login', loginData);
+      const response = await axios.post('http://localhost:8000/login', loginData);
 
       console.log('Login successful', response.data);
 

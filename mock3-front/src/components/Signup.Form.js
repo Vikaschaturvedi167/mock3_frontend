@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSignup = async () => {
     try {
       
-      const response = await axios.post('https://anxious-rugby-shirt-dove.cyclic.app/signup', signupData);
+      const response = await axios.post('http://localhost:8000/signup', signupData);
 
       console.log('Signup successful', response.data);
 
